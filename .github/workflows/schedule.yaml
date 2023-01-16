@@ -1,9 +1,8 @@
-name: Actions Workflow
+name: Schedule Actions
 
 on:
-#  push:
-  pull_request:
-    types: [closed, opened]
+  schedule:
+    - cron: "0/5 * * * *"
 
 jobs:
   run-github-actions:
@@ -30,3 +29,10 @@ jobs:
           who-to-greet: Nikitha Shetty
       - name: Log greeting time
         run: echo "${{ steps.greets.output.time }}"
+
+
+
+
+
+
+# crontab guru which explains necessary info about "* * * * *"
