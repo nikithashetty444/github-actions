@@ -2,8 +2,6 @@ name: Schedule Actions
 
 on:
   repository_dispatch:
-#  schedule:
-#    - cron: "0/5 * * * *"
 
 jobs:
   run-github-actions:
@@ -37,3 +35,6 @@ jobs:
 
 
 # crontab guru which explains necessary info about "* * * * *"
+
+#  schedule:
+#    - cron: "0/5 * * * *"
