@@ -3,7 +3,6 @@ name: Schedule Actions
 on:
   repository_dispatch:
     types: [build]
-  push:
 
 jobs:
   run-github-actions:
