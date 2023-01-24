@@ -7,10 +7,10 @@ on:
       - 'feature/*'  #matches feature/branchA, feature/branchB but does not matches feature/feat/branchC
       - 'feature/**' #matches all the of the above ones\
       - '!feature/branchD'  # will ignore this branch
-    tags:
-      - v1.*
-    paths:
-      - 'docs/**'
+#    tags:
+#      - v1.*
+#    paths:
+#      - 'docs/**'
 
 # this will make sure to run actions in all branches except for these
 # cannot have both "branches" and "branches-ignore" at the same time
