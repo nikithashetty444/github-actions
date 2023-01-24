@@ -3,7 +3,7 @@ name: Filtering Actions
 on:
   push:
     branches:
-      - master
+      - main
       - 'feature/*'  #matches feature/branchA, feature/branchB but does not matches feature/feat/branchC
       - 'feature/**' #matches all the of the above ones\
       - '!feature/branchD'  # will ignore this branch
