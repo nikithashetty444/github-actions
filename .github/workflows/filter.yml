@@ -1,7 +1,7 @@
 name: Filtering Actions
 
 on:
-  push:
+  pull_request:
     branches:
       - main
       - 'feature/*'  #matches feature/branchA, feature/branchB but does not matches feature/feat/branchC
