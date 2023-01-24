@@ -8,34 +8,15 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
-        run: |
-          pwd
-          ls -a
-          echo $GITHUB_SHA
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_WORKSPACE
-          echo "${{ github.token }}"
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: List Files after checkout
-        run: |
-          pwd
-          ls -a
-      - name: simple action
-        id: greet
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: Nikitha Shetty
-      - name: Log greeting time
-        run: echo "${{ steps.greets.output.time }}"
-
+      - name: payload
+        run: echo ${{ github.event.client_payload.env }}
 
 
 
 
 
 # crontab guru which explains necessary info about "* * * * *"
+# repository_dispatch only works on main(master) branch
 
 #  schedule:
 #    - cron: "0/5 * * * *"
