@@ -1,4 +1,4 @@
-name: Create issue on commit
+name: Create issue and file
 
 on: [ push ]
 
