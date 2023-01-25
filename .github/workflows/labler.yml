@@ -17,7 +17,9 @@ jobs:
           git config global --global user.email "bot@bot.com"
           git config global --global user.name "bot"
           git config --global init.defaultBranch main
-          git fetch
+          git branch -m master main
+          git pull origin main
+          git fetch -a
           git checkout main
           git branch --set-upstream-to=origin/main
           git pull
