@@ -1,6 +1,6 @@
 name: Create issue on commit
 
-on: [ pull_request ]
+on: [ push ]
 
 jobs:
   create-issue:
